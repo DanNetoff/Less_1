@@ -76,7 +76,23 @@ public class Main {
         b ="c";
         System.out.println(a==b);
 
-*/
+
+
+
+        byte b1=50, b2=-99;
+
+        b1 += b2;
+
+        System.out.println(b1);
+
+         */
+
+        byte b1 = 50 , b2 = 100;
+        // + for int
+        byte k1 = (byte) (b1 + b2);
+
+        System.out.println("k="+k1);
+
 
     }
 }
