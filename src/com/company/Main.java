@@ -85,13 +85,63 @@ public class Main {
 
         System.out.println(b1);
 
-         */
 
         byte b1 = 50 , b2 = 100;
         // + for int
         byte k1 = (byte) (b1 + b2);
 
         System.out.println("k="+k1);
+
+
+
+
+        int age = 7;
+        String status;
+
+        if(age>=3 && age <=6) {
+            status = "D.S";
+        }
+        else if(age>6 && age <=17) {
+            status = "School";
+        }
+        else if(age>17 && age <=22) {
+            status = "University";
+        }
+        else if(age>22 && age <=60) {
+            status = "Work";
+        }
+        else if(age>60 && age <=90) {
+            status = "Free Life";
+        }
+        else status = "Reincarnation";
+
+        System.out.println(status);
+
+
+
+        int day = 6;
+
+        switch(day) {
+            case 1 :
+
+            case 2 :
+
+            case 3 :
+
+            case 4 :
+
+            case 5 :
+                System.out.println("Work Day");
+                break;
+            case 6 :
+
+            case 7 :
+                System.out.println("WeekEnd");
+                break;
+            default:
+                System.out.println("INCORECT DAY");
+        }
+        */
 
 
     }
