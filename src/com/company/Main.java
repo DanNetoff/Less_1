@@ -141,8 +141,118 @@ public class Main {
             default:
                 System.out.println("INCORECT DAY");
         }
+
+
+        int n = 10;
+
+        while (n>0){
+            System.out.println("tick" + n);
+            n--;
+        }
+
+
+        int i =100, j=200;
+
+        while (++i<--j);
+
+        System.out.println(""+i+" "+j);
+
+
+
+        int n = -10;
+
+        do {
+            System.out.println("tick " + n);
+            n--;
+        } while(n>0);
+
+
+        int n;
+        for ( n=0;n<100;n++) {
+
+            if (n % 2 == 0) {
+                System.out.println(n);
+            }
+        }
+
+
+        int n=0;
+        while(n<=100){
+            if (n % 2 == 0) {
+                System.out.println(n);
+            }
+            n++;
+        }
+
+        n=0;
+        do {
+            if (n % 2 == 0) {
+                System.out.println(n);
+            }
+            n++;
+        }        while(n<=100);
+
+
+    int sum = 0;
+        int nums[] = {1,2,3,4,5,6,7,8,9,10};
+
+        for (int x : nums){
+            System.out.println("Values is :" + x);
+            sum += x;
+        }
+        System.out.println(sum);
+
+        int sum=0;
+        int sumRow[] = new int[3];
+        int nums[][] = new int[3][5];
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 5; j++) {
+                nums[i][j] = (i + 1) * (j + 1);
+            }
+        }
+    int ii = 0;
+        for(int x[]:nums){
+            for(int y:x){
+                System.out.println("Values "+y);
+                sum += y;
+                sumRow[ii] += y;
+            }
+            ii++;
+
+        }
+
+        System.out.println("SUM: "+ sum);
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Line "+i+ " : "+sumRow[i]);
+
+        }
+
+        boolean t = true;
+        first:{
+            second:{
+                third:{
+                    System.out.println("before");
+                    if(t) break second;
+                    System.out.println("this wont execute");
+                }
+                System.out.println("this wont execute");
+            }
+            System.out.println("this ASB");
+        }
         */
 
+        int arr[] = new int[20];
+        for (int j = 0; j < arr.length; j++) {
+            arr[j] = (j + 1);
+        }
+        for (int i = 0; i < arr.length; i++) {
+
+            if ((i+1)%3!=0) continue;
+
+            System.out.println(arr[i]);
+        }
 
     }
 }
