@@ -248,9 +248,7 @@ public class Main {
             arr[j] = (j + 1);
         }
         for (int i = 0; i < arr.length; i++) {
-
             if ((i+1)%3!=0) continue;
-
             System.out.println(arr[i]);
         }
 
