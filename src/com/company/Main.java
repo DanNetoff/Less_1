@@ -322,22 +322,22 @@ public class Main {
 
         int[] array1D = {};
         System.out.println(Arrays.toString(array1D));
-        methods.invertToArray(array1D);
+        sort.bubbleSort(array1D);
         System.out.println(Arrays.toString(array1D));
 
         int[] array2D = {0};
         System.out.println(Arrays.toString(array2D));
-        methods.invertToArray(array2D);
+        sort.bubbleSort(array2D);
         System.out.println(Arrays.toString(array2D));
 
-        int[] array3D = {0,1,2,3};
+        int[] array3D = {2,3,7,0};
         System.out.println(Arrays.toString(array3D));
-        methods.invertToArray(array3D);
+        sort.bubbleSort(array3D);
         System.out.println(Arrays.toString(array3D));
 
-        int[] array4D = {0,1,2,3,5};
+        int[] array4D = {4,78,43,2,1};
         System.out.println(Arrays.toString(array4D));
-        methods.invertToArray(array4D);
+        sort.bubbleSort(array4D);
         System.out.println(Arrays.toString(array4D));
 
 
