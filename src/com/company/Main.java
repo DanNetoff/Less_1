@@ -246,6 +246,7 @@ public class Main {
         int arr[] = new int[20];
         for (int j = 0; j < arr.length; j++) {
             arr[j] = (j + 1);
+
         }
         for (int i = 0; i < arr.length; i++) {
             if ((i+1)%3!=0) continue;
