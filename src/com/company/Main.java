@@ -3,6 +3,7 @@ package com.company;
 import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;
 import java.util.Scanner;
 
@@ -241,7 +242,7 @@ public class Main {
             }
             System.out.println("this ASB");
         }
-        */
+
 
         int arr[] = new int[20];
         for (int j = 0; j < arr.length; j++) {
@@ -252,6 +253,93 @@ public class Main {
             if ((i+1)%3!=0) continue;
             System.out.println(arr[i]);
         }
+
+
+        String strInt = "123";
+        String strDouble = "123.456";
+
+        int x;
+        double y;
+
+        x = Integer.parseInt(strInt);
+        y = Double.parseDouble(strDouble);
+
+        System.out.println("X=" + x);
+        System.out.println("Y=" + y);
+
+        strInt = String.valueOf(x+1);
+        strDouble = String.valueOf(y+1.110);
+
+        System.out.println("StrInt="+strInt);
+        System.out.println("StrDouble="+strDouble);
+
+        String str;
+        str = "num=" + 345;
+
+        System.out.println(str);
+
+
+        Integer  x;
+        x = 1000;
+
+        System.out.println(Integer.toString(123));
+        System.out.println(Integer.toBinaryString(123));
+        System.out.println(Integer.toHexString(123));
+        System.out.println(Integer.toOctalString(123));
+
+        for (String x:args) {
+            System.out.println(x);
+
+        }
+
+
+        int[][][][][] array2D = new int[2][2][2][2][2] ;
+        int sum=0;
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                for (int k = 0; k < 2; k++) {
+                    for (int l = 0; l < 2; l++) {
+                        for (int m = 0; m < 2; m++) {
+                            array2D[i][j][k][l][m] = i+j+k+l+m;
+                            sum+=array2D[i][j][k][l][m];
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+     //   System.out.println(array1D);
+    //    System.out.println(Arrays.toString(array1D));
+
+     //   System.out.println(array2D);
+     //   System.out.println(Arrays.toString(array2D));
+     //   System.out.println(Arrays.deepToString(array2D));
+     //   System.out.println(sum);
+
+        */
+
+        int[] array1D = {};
+        System.out.println(Arrays.toString(array1D));
+        methods.invertToArray(array1D);
+        System.out.println(Arrays.toString(array1D));
+
+        int[] array2D = {0};
+        System.out.println(Arrays.toString(array2D));
+        methods.invertToArray(array2D);
+        System.out.println(Arrays.toString(array2D));
+
+        int[] array3D = {0,1,2,3};
+        System.out.println(Arrays.toString(array3D));
+        methods.invertToArray(array3D);
+        System.out.println(Arrays.toString(array3D));
+
+        int[] array4D = {0,1,2,3,5};
+        System.out.println(Arrays.toString(array4D));
+        methods.invertToArray(array4D);
+        System.out.println(Arrays.toString(array4D));
+
 
     }
 }
