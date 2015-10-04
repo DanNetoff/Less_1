@@ -366,7 +366,7 @@ public class Main {
         int pos = Arrays.binarySearch(arr, -50);
         System.out.println(pos);
 
-
+*/
 
 
         int arr0[] = {1,2,3,4,5,6};
@@ -375,12 +375,12 @@ public class Main {
         System.out.println("arr0=" + Arrays.toString(arr0));
         System.out.println("arr1=" + Arrays.toString(arr1));
 
-        System.arraycopy(arr0, 1, arr1, 2, 3);
+        //arr1 = Arrays.copyOfRange(arr0,1,3);
+        System.arraycopy(arr0,1,arr1,2,3);
 
         System.out.println("arr0=" + Arrays.toString(arr0));
         System.out.println("arr1=" + Arrays.toString(arr1));
 
-*/
 
 
     }
