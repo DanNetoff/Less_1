@@ -9,6 +9,7 @@ public class sort {
                     int tmp = data[index];
                     data[index] = data[index+1];
                     data[index+1] = tmp;
+
                 }
             }
         }
